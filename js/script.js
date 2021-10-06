@@ -190,7 +190,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    
+
        // form
 
        const forms = document.querySelectorAll('form');
@@ -199,7 +199,7 @@ window.addEventListener('DOMContentLoaded', () => {
            loading: 'img/form/spinner.svg',
            seccess: 'спасибо, скоро мы с вами свяжемся!',
            failure: 'что-то пошло не так'
-       }
+       };
    
        forms.forEach(item => {
            bindPostData(item);
@@ -215,7 +215,7 @@ window.addEventListener('DOMContentLoaded', () => {
            });
    
            return await res.json();
-       }
+       };
    
        function bindPostData(form) {
            form.addEventListener('submit', (event) => {
